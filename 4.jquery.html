@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>4.Jquery</title>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$('.btx').click(function(){
+				$('.sq2').animate({'width':'100px','height':'150px','left':'100px','border-top-right-radius':'30%','border-bottom-right-radius':'30%'},2000);
+				$('.sq1').animate({'border-radius':'50%'});
+				$('.sq3').animate({'border-radius':'50%'});	
+			})
+			$('.sq2').mousedown(function(){
+				$('.sq2').animate({'width':'1000px','height':'150px','left':'100px','border-top-right-radius':'45%','border-bottom-right-radius':'45%'},2000);
+			})
+		})
+	</script>
+	
+</head>
+
+<body>
+	<div style="width: 150px; height: 100px; background-color: black;" class="sq1"></div>
+	<div style="width: 150px; height: 100px; background-color: black; position: relative" class="sq2"></div>
+	<div style="width: 150px; height: 100px; background-color: black;" class="sq3"></div>
+	<p>Click the button below</p>
+	<button type="button" class="btx">UwU</button>
+
+	
+</body>
+</html>
